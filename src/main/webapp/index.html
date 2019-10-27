@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>首页</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            overflow: hidden;
+            height: 100%;
+            max-height: 100%;
+        }
+        #frameTop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100px;
+            width: 100%;
+            overflow: hidden;
+            vertical-align: middle;
+            background-color: blue;
+        }
+        #frameContentLeft {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            height: 100%;
+            width: 150px;
+            overflow: hidden;
+            vertical-align: top;
+            background-color: yellowgreen;
+        }
+        #frameContentCenter {
+            position: fixed;
+            top: 100px;
+            left: 150px;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            vertical-align: top;
+            background-color: green;
+        }
+        #frameContentRight {
+            position: absolute;
+            right: 0px;
+            top: 100px;
+            height: 100%;
+            width: 150px;
+            overflow: hidden;
+            vertical-align: top;
+            background: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <iframe id="frameTop" src="./views/top.html"></iframe>
+    </div>
+    <div>
+        <iframe id="frameContentLeft" src="./views/left.html"></iframe>
+        <iframe id="frameContentCenter" src="./views/center.html"></iframe>
+        <iframe id="frameContentRight" src="./views/right.html"></iframe>
+    </div>
+</body>
+</html>
